@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11100e" />
+  <title>Визитка кошки</title>
+  <meta name="description" content="Бенгальская кошка." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  МЕНЯЙ ТОЛЬКО data-* НИЖЕ. Фото — в assets/img/               ║
+    ╚══════════════════════════════════════════════════════════════╝
+  -->
+  <main class="page"
+        data-name="Паркуровна"
+        data-breed="Бенгальская кошка"
+        data-telegram="kirimba256"
+        data-email="kirimba1024@yandex.com">
+
+    <header class="hero">
+      <h1 id="name">Паркуровна</h1>
+      <p class="subtitle" id="breed">Бенгальская кошка</p>
+    </header>
+
+    <figure class="hero-photo">
+      <img src="assets/img/hero.jpg" alt="Бенгальская кошка"
+           width="760" height="1013" loading="lazy" decoding="async" />
+    </figure>
+
+    <section class="intro">
+      <p>Привет! Я домашняя бенгальская кошка — любопытная и ласковая.
+         Если мы встретились, я скорее всего загулялась. Не отпускайте меня, пожалуйста,
+         и напишите хозяину — он рядом.</p>
+    </section>
+
+    <section class="contacts">
+      <a class="btn btn-tg" id="tgBtn" href="#" target="_blank" rel="noopener">
+        <span class="ico">✈️</span>
+        <span>Telegram<br><b id="tgText">t.me/kirimba256</b></span>
+      </a>
+      <a class="btn btn-mail" id="mailBtn" href="#">
+        <span class="ico">✉️</span>
+        <span>Почта<br><b id="mailText">kirimba1024@yandex.com</b></span>
+      </a>
+    </section>
+
+    <footer>
+      <p>Обновлено: <span id="updated"></span></p>
+    </footer>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

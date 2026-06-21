@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Blender
+*.blend1
+*.blend2
+
+# Сборки модели (по желанию — можно и коммитить)
+*.stl
+*.3mf
+
+# Редакторы
+.vscode/
+.idea/
+
+# Claude Code локальные настройки
+.claude/settings.local.json
