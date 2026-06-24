@@ -1,5 +1,6 @@
 """
-QR-жетон (Blender 3.x / 4.x): только QR + маленькое ушко с дыркой. Без текста.
+QR-жетон → ТЕЛЕГРАМ (t.me/kirimba256). Только QR + маленькое ушко с дыркой.
+(Аналог cat_id_tag.py, но QR ведёт прямо в Telegram, и STL — отдельные файлы.)
 
 Принцип (просто и надёжно):
   - белая плашка — ровно по размеру QR (никаких лишних полей; тихая зона
@@ -25,7 +26,7 @@ import subprocess
 # =========================
 # НАСТРОЙКИ
 # =========================
-QR_URL = "kirimba1024.github.io/cat"
+QR_URL = "t.me/kirimba256"
 
 EXPORT_DIR = ""
 
@@ -258,8 +259,8 @@ else:
     out_dir = os.path.join(os.path.expanduser("~"), "Desktop")
 os.makedirs(out_dir, exist_ok=True)
 
-plate_path = os.path.join(out_dir, "qr_1_plate.stl")
-inlay_path = os.path.join(out_dir, "qr_2_inlay.stl")
+plate_path = os.path.join(out_dir, "qr_tg_1_plate.stl")
+inlay_path = os.path.join(out_dir, "qr_tg_2_inlay.stl")
 export_stl(plate, plate_path)
 export_stl(inlay, inlay_path)
 

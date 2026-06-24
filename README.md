@@ -4,7 +4,7 @@
 Позитивная карточка: фото и контакты для связи, если кошку кто-то встретил.
 
 1. **`index.html`** — минималистичная страница для GitHub Pages, на неё ведёт QR-код с жетона.
-2. **Blender-скрипт** для печати плоского ID-жетона на Bambu Lab P1S (AMS): имя + контакты + QR.
+2. **Blender-скрипт** для печати компактного ID-жетона на Bambu Lab P1S (AMS): только QR + ушко.
 
 ## Как это работает
 
@@ -36,8 +36,8 @@
 
 1. **`index.html`** — в теге `<main class="page" ...>` поменяй `data-name`, `data-telegram`,
    `data-email`. Фото клади в `assets/img/` (`hero.jpg` — главное, `g01..g11.jpg` — галерея).
-2. **`blender/cat_id_tag.py`** — `CAT_NAME`, `TELEGRAM`, `EMAIL` вверху файла.
-   `QR_URL` уже стоит `https://kirimba1024.github.io/cat`.
+2. **`blender/cat_id_tag.py`** — жетон содержит **только QR** (без текста);
+   при необходимости поменяй `QR_URL` вверху файла (сейчас `kirimba1024.github.io/cat`).
 
 ## Публикация на GitHub Pages
 
